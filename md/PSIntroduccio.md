@@ -117,7 +117,7 @@ De forma similar al que passa amb el llenguatges de programació d'objectes, les
  
 Veiem un exemple:
 
-![cmdLet1](png/cmdLet1.png)
+<img width=60% src="png/cmdLet1.png" />
 
 ![cmdLet2](png/cmdLet2.png)
 
