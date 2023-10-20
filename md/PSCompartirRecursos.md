@@ -1,7 +1,5 @@
 # COMPARTICIÓ DE RECURSOS
 
-🗃️ [POWERSHELL](README.md)
-
 >**Note** 
 >
 > És recomanable que cada canvi que es faça del del CLI (PowerShell) *cmdLets* es comprove amb *cmdLets* de tipus "Get-" però també des de l'entorn gràfic ( GUI de Windows).
