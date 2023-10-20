@@ -41,7 +41,7 @@ CmdLets ajuda:
 6.  Fes una còpia sencera de *carpeta2* com *carpeta3* 
 
 
-## RESOLUCIÓ
+## SOLUCIÓ
 
 1.  
 ```powershell 
