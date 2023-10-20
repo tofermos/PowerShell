@@ -296,7 +296,7 @@ LocalAddress  RemoteAddress  LocalPort
 192.168.1.130 74.125.140.188      1057
 192.168.1.130 40.67.254.36        1034
 ```
-## RESUM DE COMANDAMENTS VISTOS:
+## RESUM DE cmdLets VISTOS:
 
 * Get-NetAdapter
 * Enable-NetAdapter
