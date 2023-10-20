@@ -1,4 +1,3 @@
-🗃️ [INDEX POWERSHELL][POWERSHELL]
 # PREPARACIÓ DE L'EXEMPLE
 
 ## 1. Crear les Unitats Organitzatives.
