@@ -91,7 +91,7 @@ Name              : Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
 SocketDesignation : SOCKET 0
 ```
 
-Amb el _|fl_ obtenim més detalls
+Amb el **|fl** obtenim més detalls
 
 ```
 
