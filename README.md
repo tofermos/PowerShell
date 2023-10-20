@@ -5,7 +5,7 @@ Fitxa amb alguns cmdLets bàsics i els seus usos més habituals.
 # ÍNDEX
 
 ## GENERAL
-1.  [BREU INTRODUCCIÓ.](md/introduccio.md)
+1.  [BREU INTRODUCCIÓ.](md/PSintroduccio.md)
 2.  [GESTIÓ DE FITXERS I CARPETES][FITXERS]
 3.  [GESTIÓ D'USUARIS I GRUPS (LOCALS)][COMPTES LOCALS]
 4.  [COMPARTICIÓ DE RECURSOS][RECURSOS]
