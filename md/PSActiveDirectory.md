@@ -6,7 +6,7 @@ Les eines d'administrador no venen per defecte.Per això afegim el *-IncludeMana
 ```powershell
 Install-windowsfeature -name AD-Domain-Services -IncludeManagementTools
 ```
-
+Per disposar de les eines per instal·lar i configurar el domini
 ```powershell
 Import-module addsdeployment
 ```
@@ -14,6 +14,7 @@ Import-module addsdeployment
 Install-ADDSForest -DatabasePath "C:\Windows\NTDS" -LogPath "C:\Windows\NTDS" -SYSVOLPath "C:\Windows\SYSVOL" 
 -DomainName "tfm.local" -DomainNetBIOSName "tfm" -ForestMode "Win2012" -InstallDNS:$true -NoRebootOnCompletion:$false -Force:$true
 ```
+Ens demana reinciar per aplicar la nova configuració...
 
 ```powershell
 Add-DnsServerPrimaryZone -Name "tfm.local" -ZoneFile "tfm.local"
