@@ -77,8 +77,6 @@ SerialNumber      : FAN0CV62483943E
 Version           : _ASUS_ - 1072009
 ```
 
-Si afegir el _| fl *_ obtenim més informació
-
 2.- **Obtenim informació sobre la CPU**
 
 ```
