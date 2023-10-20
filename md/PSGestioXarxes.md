@@ -157,7 +157,7 @@ Remove-NetIPAddress -InterfaceAlias "Wi-fi" -Confirm:$false
 * Obtenir la porta d'enllaç
   
 ```powershell
-
+getnetro
 PS C:\WINDOWS\system32> get-netroute -interfacealias "Wi-fi" -addressfamily "IPv4"
 
 ifIndex DestinationPrefix                              NextHop                                  RouteMetric ifMetric PolicyStore
