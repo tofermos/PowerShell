@@ -19,13 +19,13 @@ get-alias ls
 ```
 ### Eixida
 L'eixida del cmdLet pot ser
-  * out-host    Pantalla, per defecte
-  * out-file    Hem d'indicar el fitxer on volem guardar el resultat ( similar a ">" )
+  * out-host      Pantalla, per defecte
+  * out-file      Hem d'indicar el fitxer on volem guardar el resultat ( similar a ">" )
   * out-printer
-  * out-null    Similar al > /dev/null de Linux
+  * out-null      Similar al > /dev/null de Linux
  
 
-Amb el | podem indicar un format a l'eixida amb el  |
+Amb el **|** podem indicar un format a l'eixida amb...
   * ft  format-table
   * fl  format-list
   * fw  format-wide
@@ -42,7 +42,7 @@ CommandType     Name                                               Version    So
 Alias           ls -> Get-ChildItem                                                                                                                                   
         
 ```
-2.- Una vegada l'obtenim, busquem l'ajuda (com el "man ls")
+2.- Una vegada l'obtenim, busquem l'**ajuda** (com el "man ls")
 
 ```powershell
 PS C:\Users\Administrador> get-help Get-ChildItem
@@ -117,18 +117,19 @@ De forma similar al que passa amb el llenguatges de programació d'objectes, les
  
 Veiem un exemple:
 
-![cmdLet1](imatges/cmdLet1.png)
+![cmdLet1](png/cmdLet1.png)
 
-![cmdLet2](imatges/cmdLet2.png)
+![cmdLet2](png/cmdLet2.png)
 
 Compte! si formatem l'eixida ja no tenim estos avantatges.
 
-![cmdLet3](imatges/cmdLet3.png)
+![cmdLet3](png/cmdLet3.png)
 
-![cmdLet4](imatges/cmdLet4.png)
+![cmdLet4](png/cmdLet4.png)
 
 
 ## Actualització de l'ajuda
+
 ```powershell
 Update-Help
 ```
