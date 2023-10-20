@@ -14,7 +14,7 @@ Import-module addsdeployment
 Install-ADDSForest -DatabasePath "C:\Windows\NTDS" -LogPath "C:\Windows\NTDS" -SYSVOLPath "C:\Windows\SYSVOL" 
 -DomainName "tfm.local" -DomainNetBIOSName "tfm" -ForestMode "Win2012" -InstallDNS:$true -NoRebootOnCompletion:$false -Force:$true
 ```
-Ens demana reinciar per aplicar la nova configuració...
+Ens demana reinciar per aplicar la nova configuració...Quan acabe ens deman iniciar sessió. Tornarem a excutar PowerShell
 
 ```powershell
 Add-DnsServerPrimaryZone -Name "tfm.local" -ZoneFile "tfm.local"
