@@ -14,19 +14,12 @@ Import-module addsdeployment
 Install-ADDSForest -DatabasePath "C:\Windows\NTDS" -LogPath "C:\Windows\NTDS" -SYSVOLPath "C:\Windows\SYSVOL" 
 -DomainName "tfm.local" -DomainNetBIOSName "tfm" -ForestMode "Win2012" -InstallDNS:$true -NoRebootOnCompletion:$false -Force:$true
 ```
-Ens demana reinciar per aplicar la nova configuració...Quan acabe ens deman iniciar sessió. Tornarem a excutar PowerShell
+Ens demana reinciar per aplicar la nova configuració...Quan acabe ens deman iniciar sessió. Tornem a executar el PowerShell.
 
-```powershell
-Add-DnsServerPrimaryZone -Name "tfm.local" -ZoneFile "tfm.local"
+```PowerShell
+Get-DnsServerSetting
 ```
 
-```powershell
-Set-DnsServerForwarder -IPAddress 192.168.1.100
-```
-
-```powershell
-Add-DnsServerResourceRecordA -Name "www" -ZoneName "www.construirlasostenibilitat.net" -IPv4Address "192.168.1.1"
-```
 ## CONFIGURACIÓ DELS SERVIDOR
 
 ```powershell
