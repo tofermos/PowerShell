@@ -117,15 +117,16 @@ De forma similar al que passa amb el llenguatges de programació d'objectes, les
  
 Veiem un exemple:
 
-<img width=60% src="png/cmdLet1.png" />
+<img width=60% src="../png/cmdLet1.png" />
 
-![cmdLet2](png/cmdLet2.png)
+<img width=60% src="../png/cmdLet2.png" />
+
 
 Compte! si formatem l'eixida ja no tenim estos avantatges.
 
-![cmdLet3](png/cmdLet3.png)
+<img width=60% src="../png/cmdLet3.png" />
 
-![cmdLet4](png/cmdLet4.png)
+<img width=60% src="../png/cmdLet4.png" />
 
 
 ## Actualització de l'ajuda
