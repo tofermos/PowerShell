@@ -1,7 +1,4 @@
 # Gestió d'usuaris del AD en PowerShell
-🗃️ [INDEX POWERSHELL][POWERSHELL]
-
-[POWERSHELL](README.md)
 
 ### 1.0 Investiguem des de l'entorn gràfic...
 
