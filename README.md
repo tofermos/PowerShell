@@ -16,8 +16,8 @@ Fitxa amb alguns cmdLets bàsics i els seus usos més habituals.
 
 ## WINDOWS SERVER. ACTIVE DIRECTORY
 9.  [USUARIS DE L'ACTIVE DIRECTORY](md/PSADUser.md)
-10. [GRUPS DE L'ACTIVE DIRECTORY](md/PSADGroups.md))
-11. [COMPARTIR CARPETES](md/PSCompartirRecursos.md
+10. [GRUPS DE L'ACTIVE DIRECTORY](md/PSADGroup.md)
+11. [COMPARTIR CARPETES](md/PSCompartirRecursos.md)
 12. [UNITATS ORGANITZATIVES](md/PSADunitatsOrganitzatives.md)
 
 ## ANNEXES
