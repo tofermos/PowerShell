@@ -1,8 +1,12 @@
 # WMI/CIM
 
 **CMI Common Information Model**
-  Estandard per intercanviar informació entre sistemes
-**WMI Windows Management Instrumentation** Implementació que ha fet MS per a Windows.
+
+Estandard per intercanviar informació entre sistemes
+  
+**WMI Windows Management Instrumentation**
+
+Implementació que ha fet MS per a Windows.
 
 Els CmdLets de CMI estan substituint els de WMI
 
