@@ -11,7 +11,8 @@ En **VirtualBox** instal·lem el GuestAdditions. Insertant a ISO al CD i excutan
 <img width=60% src="../png/core/InstallGuestAdditions0.png">
 
 
-<img width=60% src="../png/core/InstallGuestAdditions.png">PS C:\Users\Administrador> get-addomain
+<img width=60% src="../png/core/InstallGuestAdditions.png">
+
 
 ## SCONFIG. CONFIGURACIÓ INICIAL.
 
