@@ -16,6 +16,8 @@ Fitxa amb alguns cmdLets bàsics i els seus usos més habituals.
 
 ## WINDOWS SERVER CORE
 1.  [INSTAL·LACIÓ DEL WINDOWS SERVER CORE](md/Instal·larWindowsServerCore.md)
+2.  [AFEGIR UN USUARI ADMINISTRADOR ](md/UsuariAdministrador.md)
+3.  [AFEGIR UN PC Client al Domini](md/AfegirClientCore.md)
 ## WINDOWS SERVER. ACTIVE DIRECTORY
 9.  [ACTIVE DIRECTORY i DC](md/PSActiveDirectory.md)
 10. [USUARIS DE L'ACTIVE DIRECTORY](md/PSADUser.md)
