@@ -79,7 +79,9 @@ new-aduser -GivenName "joana" -name "joana pellicer" -SamAccountName "joanapelli
 #### Contrasenya encriptada
 ```
 Ens faltaria assignar el password...
->:memo: **Apunt 5:: PowerShell disposa de cmdLets i funcions creades tipus "ConvertTo-"
+
+>:memo: **Apunt 5** PowerShell disposa de cmdLets i funcions creades tipus "ConvertTo-"
+
 >```powershell
 >PS C:\Users\Administrador> get-command convertto*
 
