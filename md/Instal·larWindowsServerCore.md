@@ -50,7 +50,6 @@ get-ADdomain
 
 ```powershell
 (get-addomain).DNSRoot
-tfm.local
 ```
 
 ```powershell
