@@ -14,6 +14,8 @@ Fitxa amb alguns cmdLets bàsics i els seus usos més habituals.
 9.  [GESTIÓ D'EVENTS](md/PSGestioServicis.md)
 10. [GESTIÓ D'USUARIS LOCALS](md/PSGestioUsuarisLocal.md)
 
+## WINDOWS SERVER CORE
+1.  [INSTAL·LACIÓ DEL WINDOWS SERVER CORE](md/InstalWindowsServerCore.md)
 ## WINDOWS SERVER. ACTIVE DIRECTORY
 9.  [ACTIVE DIRECTORY i DC](md/PSActiveDirectory.md)
 10. [USUARIS DE L'ACTIVE DIRECTORY](md/PSADUser.md)
