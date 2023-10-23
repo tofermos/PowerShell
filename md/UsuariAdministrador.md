@@ -22,7 +22,7 @@ Però...
 
 L'Afegim al grup d'Administradors
 
-<img width="60%" src=../png/core/AfegimTomasAdministradores.png>
+<img width="60%" src=../png/core/AfegirTomasAdministradores.png>
 
 
 Obervem el resultat consultant el nom dels usuaris del Grup Administradores.
@@ -34,8 +34,6 @@ Obervem el resultat consultant el nom dels usuaris del Grup Administradores.
 <img width="60%" src=../png/core/Rosa1.png>
 
 <img width="60%" src=../png/core/Rosa2.png>
-
-<img width="60%" src=../png/core/Rosa3.png>
 
 <img width="60%" src=../png/core/Rosa4.png>
 
