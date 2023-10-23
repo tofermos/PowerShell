@@ -56,7 +56,7 @@ get-ADdomain
 (get-addomain).name
 ```
 
-Amb el *get-ADdomain* veiem tota la informació del domini, arbra, bosc, nom, nom net bios, contenidor de computadors...
+Amb el *get-ADdomain* veiem tota la informació del domini, nom, nom net bios, contenidor de computadors...
 
 
 
