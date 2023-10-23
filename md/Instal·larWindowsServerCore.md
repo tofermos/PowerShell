@@ -42,13 +42,16 @@ PowerShell
 ```
 
 Comprovem que el domini s'ha creat correctament.
-```
+
+```powershell
 get-ADdomain
 ```
+
 ```powershell
 (get-addomain).DNSRoot
 tfm.local
 ```
+
 ```powershell
 (get-addomain).name
 ```
