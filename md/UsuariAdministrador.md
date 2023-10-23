@@ -18,7 +18,7 @@ Podem afegir-lo a algun dels grups locals
 
 Però...
 
-<img width="60%" src=../png/core/AfgimTomasAdministrador1.png>
+<img width="60%" src=../png/core/AfegirTomasAdministrador1.png>
 
 L'Afegim al grup d'Administradors
 
@@ -39,9 +39,4 @@ Obervem el resultat consultant el nom dels usuaris del Grup Administradores.
 
 <img width="60%" src=../png/core/Rosa4.png>
 
-
-
-
-
-<img width="60%" src=../png/core/creemUsuariLocal.png>
 
