@@ -22,7 +22,7 @@ Però...
 
 L'Afegim al grup d'Administradors
 
-<img width="60%" src=../png/core/AfgimTomasAdministradores.png>
+<img width="60%" src=../png/core/AfegimTomasAdministradores.png>
 
 
 Obervem el resultat consultant el nom dels usuaris del Grup Administradores.
