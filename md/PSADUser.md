@@ -14,34 +14,37 @@ Per tant, els camps mínims necessaris seran:
 Estes propietat les veiem en excutar el Get-ADUser...
 
 >🔎 Per buscar els cmdLets que possiblement necessitem.
->```powershell
->PS C:\Users\Administrador> Get-Command *aduser*
->
->CommandType     Name                                               Version    Source
->-----------     ----                                               -------    ------
->Cmdlet          Get-ADUser                                         1.0.1.0    ActiveDirectory
->Cmdlet          Get-ADUserResultantPasswordPolicy                  1.0.1.0    ActiveDirectory
->Cmdlet          New-ADUser                                         1.0.1.0    ActiveDirectory
->Cmdlet          Remove-ADUser                                      1.0.1.0    ActiveDirectory
->Cmdlet          Set-ADUser                                         1.0.1.0    ActiveDirectory
->
->
->PS C:\Users\Administrador> Get-Command *adaccount*
->
->CommandType     Name                                               Version    Source
->-----------     ----                                               -------    ------
->Cmdlet          Clear-ADAccountExpiration                          1.0.1.0    ActiveDirectory
->Cmdlet          Disable-ADAccount                                  1.0.1.0    ActiveDirectory
->Cmdlet          Enable-ADAccount                                   1.0.1.0    ActiveDirectory
->Cmdlet          Get-ADAccountAuthorizationGroup                    1.0.1.0    ActiveDirectory
->Cmdlet          Get-ADAccountResultantPasswordReplicationPolicy    1.0.1.0    ActiveDirectory
->Cmdlet          Search-ADAccount                                   1.0.1.0    ActiveDirectory
->Cmdlet          Set-ADAccountAuthenticationPolicySilo              1.0.1.0    ActiveDirectory
->Cmdlet          Set-ADAccountControl                               1.0.1.0    ActiveDirectory
->Cmdlet          Set-ADAccountExpiration                            1.0.1.0    ActiveDirectory
->Cmdlet          Set-ADAccountPassword                              1.0.1.0    ActiveDirectory
->Cmdlet          Unlock-ADAccount                                   1.0.1.0    ActiveDirectory
 
+```powershell
+PS C:\Users\Administrador> Get-Command *aduser*
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Get-ADUser                                         1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADUserResultantPasswordPolicy                  1.0.1.0    ActiveDirectory
+Cmdlet          New-ADUser                                         1.0.1.0    ActiveDirectory
+Cmdlet          Remove-ADUser                                      1.0.1.0    ActiveDirectory
+Cmdlet          Set-ADUser                                         1.0.1.0    ActiveDirectory
+```
+
+```powershell
+
+PS C:\Users\Administrador> Get-Command *adaccount*
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Clear-ADAccountExpiration                          1.0.1.0    ActiveDirectory
+Cmdlet          Disable-ADAccount                                  1.0.1.0    ActiveDirectory
+Cmdlet          Enable-ADAccount                                   1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADAccountAuthorizationGroup                    1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADAccountResultantPasswordReplicationPolicy    1.0.1.0    ActiveDirectory
+Cmdlet          Search-ADAccount                                   1.0.1.0    ActiveDirectory
+Cmdlet          Set-ADAccountAuthenticationPolicySilo              1.0.1.0    ActiveDirectory
+Cmdlet          Set-ADAccountControl                               1.0.1.0    ActiveDirectory
+Cmdlet          Set-ADAccountExpiration                            1.0.1.0    ActiveDirectory
+Cmdlet          Set-ADAccountPassword                              1.0.1.0    ActiveDirectory
+Cmdlet          Unlock-ADAccount                                   1.0.1.0    ActiveDirectory
+```
 
 ### 1.1 Consultem un usuari existent
 
@@ -82,20 +85,20 @@ Ens faltaria assignar el password...
 >:memo: **Apunt 5** PowerShell disposa de cmdLets i funcions creades tipus "ConvertTo-"
 
 
->```powershell
->PS C:\Users\Administrador> get-command convertto*
+```powershell
+PS C:\Users\Administrador> get-command convertto*
 
->CommandType     Name                                               Version    Source
->-----------     ----                                               -------    ------
->Function        ConvertTo-DnsServerPrimaryZone                     2.0.0.0    DnsServer
->Function        ConvertTo-DnsServerSecondaryZone                   2.0.0.0    DnsServer
->Cmdlet          ConvertTo-Csv                                      3.1.0.0    Microsoft.PowerShell.Utility
->Cmdlet          ConvertTo-Html                                     3.1.0.0    Microsoft.PowerShell.Utility
->Cmdlet          ConvertTo-Json                                     3.1.0.0    Microsoft.PowerShell.Utility
->Cmdlet          ConvertTo-ProcessMitigationPolicy                  1.0.11     ProcessMitigations
->Cmdlet          ConvertTo-SecureString                             3.0.0.0    Microsoft.PowerShell.Security
->Cmdlet          ConvertTo-TpmOwnerAuth                             2.0.0.0    TrustedPlatformModule
->Cmdlet          ConvertTo-Xml                                      3.1.0.0    Microsoft.PowerShell.Utility
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Function        ConvertTo-DnsServerPrimaryZone                     2.0.0.0    DnsServer
+Function        ConvertTo-DnsServerSecondaryZone                   2.0.0.0    DnsServer
+Cmdlet          ConvertTo-Csv                                      3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          ConvertTo-Html                                     3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          ConvertTo-Json                                     3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          ConvertTo-ProcessMitigationPolicy                  1.0.11     ProcessMitigations
+Cmdlet          ConvertTo-SecureString                             3.0.0.0    Microsoft.PowerShell.Security
+Cmdlet          ConvertTo-TpmOwnerAuth                             2.0.0.0    TrustedPlatformModule
+Cmdlet          ConvertTo-Xml                                      3.1.0.0    Microsoft.PowerShell.Utility
 ```
 Per assignar el password encriptat farem ús d'una variable com ja sabem i el cmdLet "ConvertTo-SecureString"
 
