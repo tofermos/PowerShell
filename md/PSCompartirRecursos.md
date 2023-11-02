@@ -240,7 +240,7 @@ DADES_COMP *         PORTATIL1\Tomàs Allow             Full
 DADES_COMP *         PORTATIL1\joan  Allow             Full       
 
 ```
-⌨️ Fixa't amb tots esl valors possibles de permisos de compartició i relaciona'ls amb les opcions que apareixen al GUI.
+⌨️ Fixa't amb tots els valors possibles de permisos de compartició i relaciona'ls amb les opcions que apareixen al GUI.
 Revoquem els permisos
 ```powershell
 Revoke-SmbShareAccess -Name DADES_COMP -AccountName joan -force
@@ -280,6 +280,6 @@ DADES
 PS C:\WINDOWS\system32> Remove-Item C:\dades
 ```
 >**Note** 
-> Recordeu que a Windows no es diferencies MAJÚSCULES de minúscules
+> Recordeu que a Windows no es diferencien MAJÚSCULES de minúscules
 > 
 
