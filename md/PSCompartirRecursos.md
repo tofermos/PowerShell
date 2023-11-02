@@ -151,44 +151,14 @@ Users      *         C:\Users
 ### Altra. Accessos concurrents.
 
 ```powershell
-Get-SmbShare -name DADES_COMP|fl *
+PS C:\dir1> (Get-SmbShare DIRECTORI1).ConcurrentUserLimit
+0
+PS C:\dir1> Set-SmbShare DIRECTORI1 -ConcurrentUserLimit 7 -force
+PS C:\dir1> (Get-SmbShare DIRECTORI1).ConcurrentUserLimit
+7
+PS C:\dir1>
 ```
-💻 Resultat
-```
-PresetPathAcl         : System.Security.AccessControl.DirectorySecurity
-ShareState            : Online
-AvailabilityType      : NonClustered
-ShareType             : FileSystemDirectory
-FolderEnumerationMode : Unrestricted
-CachingMode           : Manual
-LeasingMode           : Full
-SmbInstance           : Default
-CATimeout             : 0
-ConcurrentUserLimit   : 0
-ContinuouslyAvailable : False
-CurrentUsers          : 0
-Description           : dades a compartir
-EncryptData           : False
-IdentityRemoting      : False
-Infrastructure        : False
-Name                  : DADES_COMP
-Path                  : C:\DADES
-Scoped                : False
-ScopeName             : *
-SecurityDescriptor    : O:SYG:SYD:(A;;0x1200a9;;;WD)
-ShadowCopy            : False
-Special               : False
-Temporary             : False
-Volume                : \\?\Volume{19e2f4cb-7976-42e0-b276-caaee97495bc}\
-PSComputerName        : 
-CimClass              : ROOT/Microsoft/Windows/SMB:MSFT_SmbShare
-CimInstanceProperties : {AvailabilityType, CachingMode, CATimeout, ConcurrentUserLimit...}
-CimSystemProperties   : Microsoft.Management.Infrastructure.CimSystemProperties
 
-```
-```powershell
-Set-SmbShare -name DADES_COMP -ConcurrentUserLimit 12 -force
-```
 ### 5.  CANVI DE PERMISOS.
 
 ```powershell
