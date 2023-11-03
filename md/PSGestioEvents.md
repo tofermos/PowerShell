@@ -51,7 +51,7 @@ PS C:\WINDOWS\system32> Get-EventLog -list
 *  OAlerts
 *  Secutirty
 *  Reason
-*  System
+  
 
 ```powershell
 PS C:\Windows\system32> get-eventlog -LogName system -Newest 1
