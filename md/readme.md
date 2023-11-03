@@ -23,7 +23,7 @@ ANNEXES
 
 [INTRODUCCIÓ]:https://github.com/tofermos/PowerShell/blob/main/introduccio.md
 [FITXERS]:https://github.com/tofermos/PowerShell/blob/main/POWERSHELL%20GESTIO%20DE%20FITXERS%20I%20CARPETES.md
-[COMPTES LOCALS]:https://github.com/tofermos/PowerShell/blob/main/GESTIO%20USUARIS.md
+[COMPTES LOCALS]:https://github.com/tofermos/PowerShell/blob/main/PSGestioUsuarisLocal.md
 [RECURSOS]:https://github.com/tofermos/PowerShell/blob/main/COMPARTIR%20RECURSOS.md
 [PROCESOS]:https://github.com/tofermos/PowerShell/blob/main/PROCESSOS.md
 [EVENTS]:https://github.com/tofermos/PowerShell/blob/main/GESTI%C3%93%20D'EVENTS.md
