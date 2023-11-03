@@ -116,7 +116,7 @@ PS C:\Users\Administrador\Documents\carpeta2> copy-item -path f2 -destination f5
 ```powershell 
 PS C:\Users\Administrador\Documents\carpeta2> Copy-Item ..\carpeta2 ../carpeta3
 
-PS C:\Users\Administrador\Documents\carpeta2> get-childItem ..
+PS C:\Users\Administrador\Documents\carpeta2> get-childItem -directory -path ..
 
 
     Directorio: C:\Users\Administrador\Documents
