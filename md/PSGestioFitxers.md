@@ -12,11 +12,14 @@ CmdLets ajuda:
 
 *   New-Item
 *   Set-Location
+*   Get-Location
 *   Copy-Item
 *   Rename-Item
 *   Remove-Item
 *   Move-Item
-*   ...
+*   Get-ChildItem
+*   Get-PSDrive
+  
 
 
 ```powershell
