@@ -33,6 +33,12 @@ Encara amb els cmdLets de PowerShell es poden fer totes les tasques de confifgur
 
 ## INSTAL·LACIÓ I CONFIGURACIÓ BÀSICA D'*ACTIVE DIRECTORY* DES DE POWERSHELL
 
+Iniciem el PowerShell
+
+```powershell
+powershell
+```
+
 ## Afegim el ROL de l'Active Directory
 
 Les eines d'administrador no venen per defecte. Per això afegim el *-IncludeManagementTools*
