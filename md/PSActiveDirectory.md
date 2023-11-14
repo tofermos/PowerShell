@@ -20,7 +20,7 @@ Ens demana reinciar per aplicar la nova configuració...Quan acabe ens deman ini
 Get-DnsServerSetting
 ```
 
-## CONFIGURACIÓ DELS SERVIDOR
+## CONFIGURACIÓ DEL SERVIDOR
 
 ```powershell
 sconfig
