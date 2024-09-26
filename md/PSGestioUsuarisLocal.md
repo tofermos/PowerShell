@@ -3,7 +3,7 @@
 ## INFORMACIÓ SOBRE USUARIS LOCALS
 * Get-LocalUser
 * New-LocalUser
-* ConvertTo-SecureString* set
+* ConvertTo-SecureString set
 * Set-LocalUser
 * Remove-LocalUser
 
