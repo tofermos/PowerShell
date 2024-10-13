@@ -45,15 +45,15 @@ Ja sabem el nom: "Ethernet". També que és fixa ( Dhcp: Disabled). Podem mirar 
 Get-NetIPAddress -InterfaceAlias "ETHER*"
 ```
 
-### Executa la següent comanda per assignar l'IP fixa:
+### Executa la següent ordre per assignar l'IP fixa:
 
 ```powershell
 Set-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress 192.168.100.100 -PrefixLength 24
 ```
 
-### Configuració de la NIC (interfície de xarxa)
+### Assignem l'adreça de loopback com a adreça DNS.
 
-Assignem l'adreça de loopback com a adreça DNS.
+Assumim que, en la nostre domini, el servidor DNS és el mateix que aquest que farà de servidor DHCP. En cas que fora un altre, indicaríem ací la seua IP.
 
 ```powershell
 Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses 127.0.0.1
@@ -84,13 +84,14 @@ PS C:\Windows\system32> Get-DhcpServerv4Scope
 
 ## 2.2 Configuració d'exclusions d'IP
 
-EXcloure des de la 192.168.100.80 fins a 192.168.100.99:
+Excloure des de la 192.168.100.80 fins a 192.168.100.99:
 
 1. Executa aquesta comanda PowerShell:
 
 ```powershell
 Add-DhcpServerv4ExclusionRange -ScopeId 192.168.100.0 -StartRange 192.168.100.80 -EndRange 192.168.100.99
 ```
+Es poden fer més d'una exclusió.
 
 ### Per consultar, eliminar... 
 
@@ -104,6 +105,25 @@ ScopeId              StartRange           EndRange
 
 PS C:\Windows\system32> remove-DhcpServerv4ExclusionRange -ScopeId 192.168.100.0
 PS C:\Windows\system32> Add-DhcpServerv4ExclusionRange -ScopeId 192.168.100.0 -StartRange 192.168.100.80 -EndRange 192.168.100.99
+```
+
+Si tenim més d'una exclusió...
+
+```
+PS C:\Windows\system32> Get-DhcpServerv4ExclusionRange
+
+ScopeId              StartRange           EndRange
+-------              ----------           --------
+192.168.100.0        192.168.100.80       192.168.100.99
+192.168.100.0        192.168.100.20       192.168.100.30
+
+
+PS C:\Windows\system32> Remove-DhcpServerv4ExclusionRange -ScopeId 192.168.100.0 -StartRange 192.168.100.20 -EndRange 192.168.100.30
+PS C:\Windows\system32> Get-DhcpServerv4ExclusionRange
+
+ScopeId              StartRange           EndRange
+-------              ----------           --------
+192.168.100.0        192.168.100.80       192.168.100.99
 ```
 
 # 5. Reserva d'IP
@@ -138,6 +158,27 @@ IPAddress            ScopeId              ClientId             Name             
 PS C:\Windows\system32> Remove-DhcpServerv4Reservation -ScopeId 192.168.100.0
 PS C:\Windows\system32> Add-DhcpServerv4Reservation -ScopeId 192.168.100.0 -IPAddress 192.168.100.1 -ClientId "08-00-27-B5-DC-55" -Description "Reserva per a Windows 11"
 ```
+Si tenim més d'una reserva:
+
+```
+PS C:\Windows\system32> Get-DhcpServerv4Reservation  -ScopeId 192.168.100.0
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description
+---------            -------              --------             ----                 ----                 -----------
+192.168.100.3        192.168.100.0        08-00-27-b5-dc-66                         Both                 PC 2 Windows 10
+192.168.100.2        192.168.100.0        08-00-27-b5-dc-55                         Both                 PC 1 Windows 11
+
+
+PS C:\Windows\system32> Remove-DhcpServerv4Reservation -ScopeId 192.168.100.0 -ClientId "08-00-27-b5-dc-55"
+PS C:\Windows\system32> Get-DhcpServerv4Reservation  -ScopeId 192.168.100.0
+
+IPAddress            ScopeId              ClientId             Name                 Type                 Description
+---------            -------              --------             ----                 ----                 -----------
+192.168.100.3        192.168.100.0        08-00-27-b5-dc-66                         Both                 PC 2 Windows 10
+```
+
+&#9888;️
+Si filtrem el *Remove-DhcpServerv4Reservation* per *-IPAddress 192.168.100.2* elimina totes les reserves del rang.
 
 # 6 Obtenció de la MAC d'altres formes 
 
@@ -155,4 +196,4 @@ PS C:\Windows\system32> Add-DhcpServerv4Reservation -ScopeId 192.168.100.0 -IPAd
    ```cmd
    ipconfig /all
    ```
-
+   
