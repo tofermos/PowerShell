@@ -25,6 +25,9 @@ Fitxa amb alguns cmdLets bàsics i els seus usos més habituals.
 12. [COMPARTIR CARPETES](md/PSCompartirRecursos.md)
 13. [UNITATS ORGANITZATIVES](md/PSADunitatsOrganitzatives.md)
 
+## WINDOWS SERVER. SERVEI DE PROTOCOL DHCP
+1.  [CONFIGURACIÓ DHCP SERVER IPV4](md/configuracioDHCP.md)
+
 ## ANNEXES
 11. [INSTAL·LACIÓ DEL POWERSHELL EN UN UBUNTU](md/Instal·larPowerShellUbuntu.md)
 
