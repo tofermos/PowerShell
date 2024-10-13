@@ -2,19 +2,38 @@
 - Windows Server 2019 amb el rol de DHCP instal·lat.
 - IP fixa configurada per al servidor DHCP.
 
+Obri una sessió PowerShell amb permisos d'administrador.
+
 # 1. Configurar la IP fixa del servidor Windows Server 2019
 
 Estableix la següent IP al servidor: 192.168.100.100.
 
-## Passos:
-1. Obri una sessió PowerShell amb permisos d'administrador.
-2. Executa la següent comanda per assignar l'IP fixa:
+## 1.1 Averigua el nom de la NIC i la IP.
 
-   ```powershell
-   New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress 192.168.100.100 -PrefixLength 24 -DefaultGateway 192.168.100.1
-   ```
+```powershell
+Get-NetIPInterface
+```
+Suposem una resposta:
 
-   Nota: Substitueix "Ethernet" pel nom correcte de la interfície de xarxa (NIC) si és diferent.
+fIndex InterfaceAlias                  AddressFamily NlMtu(Bytes) InterfaceMetric Dhcp     ConnectionState PolicyStore
+------- --------------                  ------------- ------------ --------------- ----     --------------- -----------
+1       Loopback Pseudo-Interface 1     IPv6            4294967295              75 Disabled Connected       ActiveStore
+7       Ethernet                        IPv4                  1500              25 Disabled Connected       ActiveStore
+1       Loopback Pseudo-Interface 1     IPv4            4294967295              75 Disabled Connected       ActiveStore
+
+
+Ja sabem el nom: "Ethernet". També que és fixa ( Dhcp: Disabled). Podem mirar si la IP
+
+```powershell
+Get-NetIPAddress -InterfaceAlias "ETHER*"
+```
+
+## 1.2 Executa la següent comanda per assignar l'IP fixa:
+
+```powershell
+Set-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress 192.168.100.100 -PrefixLength 24
+```
+
 
 # 2. Configuració de la NIC (interfície de xarxa)
 
